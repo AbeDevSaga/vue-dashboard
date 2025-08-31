@@ -40,7 +40,7 @@
 </template>
 
 <script lang="ts" setup>
-import SidebarLinkCard from "./SidebarLinkCard.vue";
+import SidebarLinkCard from "./SideBarLinkCard.vue";
 import UserProfileCard from "./UserProfileCard.vue";
 
 // SVG icons
