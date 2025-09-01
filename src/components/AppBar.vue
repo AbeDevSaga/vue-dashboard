@@ -1,6 +1,6 @@
 <template>
   <header
-    class="w-full pt-[20px] px-[20px] flex items-center justify-end"
+    class="w-full appbar pt-[20px] px-[20px] flex items-center justify-end"
   >
     <div class="flex items-center space-x-[20px]">
       <SourceFilterCard />

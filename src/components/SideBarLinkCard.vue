@@ -4,8 +4,10 @@
     class="flex items-center w-full h-[48px] px-[12px] space-x-[13px]"
   >
     <!-- Left Icon -->
-    <div class="w-[24px] h-[24px] flex text-primary items-center justify-center">
-      <img :src="iconSrc" :alt="iconAlt" class="w-[18px] h-auto" />
+    <div
+      class="w-[24px] h-[24px] flex primary-text items-center justify-center"
+    >
+      <img :src="iconSrc" :alt="iconAlt" class="w-[18px] h-[18px]" />
     </div>
 
     <!-- Text -->

@@ -1,18 +1,18 @@
 <template>
   <div
-    class="flex items-center w-[314] px-[20px] h-[130px] space-x-[14px] border rounded-[6px]"
+    class="flex items-center w-full px-[20px] h-[130px] space-x-[14px] border rounded-[10px]"
   >
-    <!-- Left section: headline + footer -->
+    <!-- Left section: icon -->
     <div
-      class="flex primary items-center w-[65px] h-[65px] rounded-[10px] justify-center"
+      class="flex primary items-center p-[19px] h-[65px] rounded-[10px] justify-center"
     >
       <div class="flex items-center w-[28px] h-[28px] justify-center">
         <img :src="iconSrc" :alt="iconAlt" class="w-[23px] h-auto" />
       </div>
     </div>
 
-    <!-- Right section: dynamic image -->
-    <div class="flex flex-col items-left">
+    <!-- Right section: texts -->
+    <div class="flex flex-col items-left truncate">
       <span class="headline truncate">{{ headline }}</span>
       <span class="footer truncate">{{ footer }}</span>
     </div>

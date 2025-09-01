@@ -11,7 +11,7 @@
       <SidebarLinkCard
         text="General"
         link="/"
-        :icon="dashboardIcon"
+        :iconSrc="dashboardIcon"
         iconAlt="Dashboard"
       />
       <SidebarLinkCard
@@ -29,7 +29,7 @@
       <SidebarLinkCard
         text="Admins"
         link="/admins"
-        :icon="adminIcon"
+        :iconSrc="adminIcon"
         iconAlt="Admins"
       />
       <SidebarLinkCard
@@ -42,12 +42,7 @@
 
     <!-- User Profile Card at the bottom -->
     <div class="mt-auto pt-6">
-      <UserProfileCard
-        name="Aman Dan"
-        email="aman@example.com"
-        :collapseIcon="CollapseIcon"
-        :openIcon="OpenIcon"
-      />
+      <UserProfileCard name="Aman Dan" email="aman@example.com" />
     </div>
   </aside>
 </template>
@@ -60,10 +55,6 @@ import UserProfileCard from "./UserProfileCard.vue";
 import adminIcon from "../assets/admin.svg";
 import dashboardIcon from "../assets/dashboard.svg";
 import profileIcon from "../assets/profile.svg";
-import listIcon from "../assets/list.svg";
+import listIcon from "../assets/wlist.svg";
 import statIcon from "../assets/stat.svg";
-
-import ProfileIcon from "./icons/ProfileIcon.vue";
-import CollapseIcon from "./icons/CollapseIcon.vue";
-import OpenIcon from "./icons/OpenIcon.vue";
 </script>

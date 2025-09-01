@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-between w-[200px] bg-background p-2 rounded shadow"
+    class="flex items-center justify-between w-[200px]"
   >
     <!-- Left section: avatar + user info -->
     <div class="flex items-center gap-2">
@@ -17,9 +17,9 @@
       </div>
 
       <!-- User info -->
-      <div class="flex flex-col text-sm max-w-[100px]">
-        <span class="font-medium text-black truncate">{{ name }}</span>
-        <span class="text-gray-600 truncate">{{ email }}</span>
+      <div class="flex flex-col user max-w-[100px]">
+        <span class="text-[14px]  truncate">{{ name }}</span>
+        <span class="text-[12px] truncate">{{ email }}</span>
       </div>
     </div>
 
