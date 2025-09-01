@@ -28,6 +28,16 @@ body {
 
 
  */
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #000000;
+}
+
 .headline {
   font-weight: 500;
   font-style: Medium;
@@ -53,7 +63,6 @@ body {
   letter-spacing: 0px;
   color: #505050;
 }
-
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scrollbar::-webkit-scrollbar {

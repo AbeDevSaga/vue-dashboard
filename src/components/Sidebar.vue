@@ -8,22 +8,35 @@
     </div>
 
     <nav class="flex flex-col gap-2">
-      <SidebarLinkCard text="General" link="/" :icon="DashboardIcon" />
+      <SidebarLinkCard
+        text="General"
+        link="/"
+        :icon="dashboardIcon"
+        iconAlt="Dashboard"
+      />
       <SidebarLinkCard
         text="Statistics"
         link="/statistics"
-        :icon="StatisticsIcon"
+        :iconSrc="statIcon"
+        iconAlt="Statistics"
       />
       <SidebarLinkCard
         text="Waiting List"
         link="/waiting-list"
-        :icon="WaitingListIcon"
+        :iconSrc="listIcon"
+        iconAlt="Waiting List"
       />
-      <SidebarLinkCard text="Admins" link="/admins" :icon="AdminsIcon" />
+      <SidebarLinkCard
+        text="Admins"
+        link="/admins"
+        :icon="adminIcon"
+        iconAlt="Admins"
+      />
       <SidebarLinkCard
         text="Profile Settings"
         link="/profile"
-        :icon="ProfileIcon"
+        :iconSrc="profileIcon"
+        iconAlt="Profile"
       />
     </nav>
 
@@ -44,10 +57,12 @@ import SidebarLinkCard from "./SideBarLinkCard.vue";
 import UserProfileCard from "./UserProfileCard.vue";
 
 // SVG icons
-import DashboardIcon from "./icons/DashboardIcon.vue";
-import StatisticsIcon from "./icons/StatisticsIcon.vue";
-import WaitingListIcon from "./icons/WaitingListIcon.vue";
-import AdminsIcon from "./icons/AdminsIcon.vue";
+import adminIcon from "../assets/admin.svg";
+import dashboardIcon from "../assets/dashboard.svg";
+import profileIcon from "../assets/profile.svg";
+import listIcon from "../assets/list.svg";
+import statIcon from "../assets/stat.svg";
+
 import ProfileIcon from "./icons/ProfileIcon.vue";
 import CollapseIcon from "./icons/CollapseIcon.vue";
 import OpenIcon from "./icons/OpenIcon.vue";

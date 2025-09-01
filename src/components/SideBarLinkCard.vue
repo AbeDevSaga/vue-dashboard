@@ -1,22 +1,15 @@
 <template>
   <a
     :href="link"
-    class="flex items-center w-[200px] h-[48px] p-2 rounded hover:bg-gray-100 transition"
+    class="flex items-center w-full h-[48px] px-[12px] space-x-[13px]"
   >
     <!-- Left Icon -->
-    <span
-      class="flex-shrink-0"
-      :style="{
-        width: `${iconSize}px`,
-        height: `${iconSize}px`,
-        color: 'var(--color-primary)',
-      }"
-    >
-      <component :is="icon" />
-    </span>
+    <div class="w-[24px] h-[24px] flex text-primary items-center justify-center">
+      <img :src="iconSrc" :alt="iconAlt" class="w-[18px] h-auto" />
+    </div>
 
     <!-- Text -->
-    <span class="ml-3" :style="{ color: 'var(--color-text)' }">
+    <span class="title">
       {{ text }}
     </span>
   </a>
@@ -28,10 +21,9 @@ import { defineProps } from "vue";
 const props = defineProps<{
   text: string;
   link?: string;
-  icon: any; // pass Vue component
-  iconSize?: number;
+  iconSrc: string;
+  iconAlt?: string;
 }>();
 
-const iconSize = props.iconSize ?? 18;
-const link = props.link ?? "#";
+const iconAlt = props.iconAlt ?? "icon";
 </script>
